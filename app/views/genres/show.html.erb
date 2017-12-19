@@ -1,0 +1,5 @@
+<h1><%= @genre.name %></h1>
+<p><%= link_to "Edit", edit_genre_path(@genre)%></p>
+<% @genre.artists.each do |artist| %>
+  <p>Artist: <%= link_to artist.name, artist %></p>
+<% end %>
